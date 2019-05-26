@@ -35,7 +35,7 @@ class body extends Component {
   }
 
   handleKeyPress = (e) => {
-    console.log(e.key)
+    // console.log(e.key)
   }
 
   render() {
