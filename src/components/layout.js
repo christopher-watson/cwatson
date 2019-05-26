@@ -34,7 +34,9 @@ const Layout = ({ children }) => (
           {/* <main>{children}</main> */}
         </div>
         <footer>
-          © {new Date().getFullYear()} All Rights Reserved
+          <div className="footer-text">
+            © {new Date().getFullYear()} All Rights Reserved
+          </div>
         </footer>
       </div>
     )}
