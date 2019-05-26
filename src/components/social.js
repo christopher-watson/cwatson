@@ -26,21 +26,23 @@ const styles = {
     textAlign: 'center',
     backgroundColor: '#5D5D5D30',
     display: 'grid',
-    height: '36px',
+    height: '55px',
     transition: 'height 250ms'
   },
   atClosed: {
     margin: '.5rem 0',
-    fontSize: '1rem',
+    fontSize: '2rem',
     transition: 'transform 2s',
     transform: 'rotate(-360deg)',
+    textShadow: '0 0 1px #323232'
   },
   atOpen: {
-    color: '#FF002890',
+    color: '#FA2535',
     margin: '.5rem 0',
-    fontSize: '1rem',
+    fontSize: '2rem',
     transition: 'transform 2s',
-    transform: 'rotate(540deg)',
+    transform: 'rotate(541deg)',
+    textShadow: '0 0 1px #323232'
   },
 }
 
@@ -59,10 +61,10 @@ class Social extends Component {
   toggle() {
     this.setState({ atCollapse: !this.state.atCollapse });
     if(this.state.atCollapse){
-      document.getElementById('collapseSocial').style.height = '36px'
+      document.getElementById('collapseSocial').style.height = '55px'
     }
     else{
-      document.getElementById('collapseSocial').style.height = '190px'
+      document.getElementById('collapseSocial').style.height = '300px'
     }
   }
 
@@ -90,7 +92,10 @@ class Social extends Component {
     return (
       <div className="social-collapse" id='collapseSocial' style={styles.socialCollapseMain}>
         <span className="social-collapse-span">
-          <i onClick={() => this.toggle()} className="fas fa-at" style={this.state.atCollapse ? styles.atOpen : styles.atClosed}></i>
+          <div className="tooltip">
+            <i onClick={() => this.toggle()} className="fas fa-at" style={this.state.atCollapse ? styles.atOpen : styles.atClosed}></i>
+            <div className="tooltip-text">Follow Me!</div>
+          </div>
         </span>
         <div className="social-collapse-inner" style={this.state.mobile ? styles.socialCollapseInnerMobile : styles.socialCollapseInner}>
           <div className='social-icons' style={this.state.atCollapse ? styles.socialVis : styles.socialHidden}>

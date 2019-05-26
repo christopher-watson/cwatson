@@ -24,7 +24,7 @@ const styles = {
   plusOpen: {
     transition: 'transform 2s',
     transform: 'rotate(360deg)',
-    color: '#FF002890'
+    color: '#FA2535'
   },
 }
 
@@ -43,7 +43,7 @@ class Header extends Component {
   toggle() {
     this.setState({ collapse: !this.state.collapse });
     if(this.state.collapse){
-      document.getElementById('collapseHeader').style.height = '36px'
+      document.getElementById('collapseHeader').style.height = '55px'
     }
     else{
       document.getElementById('collapseHeader').style.height = '250px'
@@ -80,7 +80,10 @@ class Header extends Component {
         </div>
         <div className="header-bottom" id='collapseHeader'>
           <span className="header-bottom-span">
-            <i onClick={() => this.toggle()} className="far fa-times-circle" style={this.state.collapse ? styles.plusOpen : styles.plusClosed}></i>
+            <div className="tooltip">
+              <i onClick={() => this.toggle()} className="far fa-times-circle" style={this.state.collapse ? styles.plusOpen : styles.plusClosed}></i>
+              <div className="tooltip-text">About Me</div>
+            </div>
           </span>
           <div className="header-bio" style={this.state.mobile ? styles.headerBottomMobile : styles.headerBottom}>
             <p className='header-bio-text' style={this.state.collapse ? styles.textVis : styles.textHidden}>

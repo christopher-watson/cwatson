@@ -7,9 +7,10 @@ const styles = {
     gridTemplateColumns: '5rem 10rem',
     gridTemplateAreas: 'img handle',
     width: 'min-content',
-    border: '5px solid hsla(0, 0%, 0%, 0.8)',
+    border: '5px solid #323232',
     borderRadius: '15px',
-    margin: '5px 0'
+    margin: '5px 0',
+    background: '#323232'
   },
   image: {
     display: 'flex',
@@ -17,7 +18,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     color: '#fff',
-    borderRadius: '8px 0 0 8px',
+    borderRadius: '10px 0 0 10px',
     fontSize: '3rem',
     padding: '1rem 0',
   },
@@ -30,8 +31,6 @@ const styles = {
     borderRadius: '0 8px 8px 0',
   }
 }
-
-
 
 const card = (props) => {
   return (
