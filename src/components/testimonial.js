@@ -4,7 +4,7 @@ const styles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
-    padding: '40px 30px',
+    padding: '40px 90px',
     width: '100vw',
     justifyContent: 'center',
     textAlign: 'center',
@@ -25,8 +25,11 @@ const styles = {
   },
   hr: {
     borderTop: '1px dashed #f7f7f7',
-    width: '80%',
+    width: '70%',
     margin: '20px 0',
+  },
+  links: {
+    color: '#dadada'
   },
 }
 
@@ -36,23 +39,24 @@ const Testimonial = () => {
       <div style={styles.heading} className="testimonial-heading">Testimonials:</div>
       {/* test 1 */}
       <div style={styles.text} className="testimonial-text">
-        Sociosqu accumsan nec varius lectus cum sociis rutrum tincidunt facilisi magna eleifend congue parturient ac ante nam posuere orci aptent
-        <span style={styles.author}className="testimonial-author"> - Mike Jones</span>
+        Christopher has curated the perfect website for me. It’s captivating, to the point, and relays exactly the message I was looking to communicate to my audience. 
+        I would definitely look to him to create another in the future. <br/>
+        <span style={styles.author}className="testimonial-author"> - Lindsay Watson | <a style={styles.links} target='_blank' rel="noopener noreferrer" href="http://lindsaywatson.co">lindsaywatson.co</a></span>
       </div>
-      <hr style={styles.hr}/>
+      {/* <hr style={styles.hr}/> */}
 
       {/* test 2 */}
-      <div style={styles.text} className="testimonial-text">
-        Sociosqu accumsan nec varius lectus cum sociis rutrum tincidunt facilisi magna eleifend congue parturient ac ante nam posuere orci aptent
+      {/* <div style={styles.text} className="testimonial-text">
+        Sociosqu accumsan nec varius lectus cum sociis rutrum tincidunt facilisi magna eleifend congue parturient ac ante nam posuere orci aptent <br/>
         <span style={styles.author}className="testimonial-author"> - Mike Jones</span>
       </div>
-      <hr style={styles.hr}/>
+      <hr style={styles.hr}/> */}
 
       {/* test 3 */}
-      <div style={styles.text} className="testimonial-text">
-        Sociosqu accumsan nec varius lectus cum sociis rutrum tincidunt facilisi magna eleifend congue parturient ac ante nam posuere orci aptent
+      {/* <div style={styles.text} className="testimonial-text">
+        Sociosqu accumsan nec varius lectus cum sociis rutrum tincidunt facilisi magna eleifend congue parturient ac ante nam posuere orci aptent <br/>
         <span style={styles.author}className="testimonial-author"> - Mike Jones</span>
-      </div>
+      </div> */}
     </div>
   );
 };
