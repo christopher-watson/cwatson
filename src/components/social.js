@@ -23,11 +23,12 @@ const styles = {
     // paddingBottom: '13px',
   },
   socialCollapseMain: {
-    textAlign: 'center',
-    backgroundColor: '#5D5D5D30',
     display: 'grid',
+    textAlign: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#5D5D5D30',
     height: '55px',
-    transition: 'height 250ms'
+    transition: 'height 250ms',
   },
   atClosed: {
     margin: '.5rem 0',

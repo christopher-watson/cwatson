@@ -25,7 +25,7 @@ class body extends Component {
   }
 
   handleResize = () => {
-    console.log('resizing')
+    // console.log('resizing')
     if(window.innerWidth < 960) {
       this.setState({ mobile: true })
     }

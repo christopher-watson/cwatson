@@ -122,8 +122,6 @@ header {
 }
 
 .social-collapse {
-  justify-content: center;
-  /* width: 100%; */
   background-color: var(--dividerGrey);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23f7f7f7' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
@@ -138,17 +136,37 @@ header {
 }
 
 .social-icons {
+  display: flex;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  grid-gap: 5px;
+  grid-template-columns: repeat(6, 300px);
   justify-content: center;
-  /* width: 100vw; */
+  grid-gap: 5px;
   max-width: 2000px;
+}
+
+.social-icons .card {
+  justify-self: center;
 }
 
 @media only screen and (max-width: 1870px) {
   .social-icons {
     max-width: 1000px;
+    grid-template-columns: repeat(3, 300px);
+  }
+} 
+
+@media only screen and (max-width: 960px) {
+  .social-icons {
+    max-width: 1000px;
+    grid-template-columns: repeat(2, 300px);
+  }
+} 
+
+@media only screen and (max-width: 650px) {
+  .social-icons {
+    max-width: 1000px;
+    grid-template-columns: repeat(1, 300px);
   }
 } 
 
