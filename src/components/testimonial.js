@@ -5,7 +5,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     padding: '40px 90px',
-    width: '100vw',
+    // width: '100vw',
     justifyContent: 'center',
     textAlign: 'center',
     alignItems: 'center',
@@ -17,7 +17,7 @@ const styles = {
   },
   text: {
     color: '#DADADA',
-    width: '100%',
+    // width: '100%',
   },
   author: {
     color: '#FA2535dd',
