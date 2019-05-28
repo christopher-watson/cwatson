@@ -87,11 +87,18 @@ header {
   background: var(--white);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min-content, 700px));
-  /* MAX WIDTH ??? */
+  /* width: 100vw; */
+  /* max-width: 2000px; */
   grid-gap: 20px;
   padding: 40px;
   justify-content: center;
 }
+
+@media only screen and (min-width: 2190px) {
+  .work {
+    grid-template-columns: repeat(2, minmax(min-content, 700px));
+  }
+} 
 
 .skills-collapse-span i {
   color: var(--white);
@@ -199,4 +206,8 @@ footer {
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent var(--black) transparent;
+}
+
+.cta-div .tooltip .tooltip-text {
+  left: -2vw;
 }
