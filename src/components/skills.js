@@ -61,7 +61,7 @@ class Skills extends Component {
       document.getElementById('collapseSkills').style.height = '55px'
     }
     else{
-      document.getElementById('collapseSkills').style.height = '300px'
+      document.getElementById('collapseSkills').style.height = '350px'
     }
   }
 
