@@ -1,6 +1,2 @@
 # Redirect default Netlify subdomain to primary domain
-# http://nervous-williams-3b2edd.netlify.com/* http://www.christopherwatson.co/:splat 301!
-/ /
-/vinyl http://www.christopherwatson.co/vinyl
-/trivia http://www.christopherwatson.co/trivia
-/gif-bot http://www.christopherwatson.co/gif-bot
+http://nervous-williams-3b2edd.netlify.com/* http://www.christopherwatson.co/:splat 301!
