@@ -46,6 +46,7 @@ class body extends Component {
             <Browser name='isabellafitness.com' url='isabellafitness.com' image={isabella}/>
             <Browser name='Vinyl Game' url='christopherwatson.co/vinyl' image={vinyl}/>
             <Browser name='Trivia Game' url='christopherwatson.co/trivia' image={jeopardy}/>
+
             {/* <Browser name='Image Carousel' url='christopherwatson.co/gif-bot' image={carousel}/> */}
           </div>
           <div className="skills">
