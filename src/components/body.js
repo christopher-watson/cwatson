@@ -10,7 +10,7 @@ import Testimonial from './testimonial';
 import lindsay from '../images/lindsay.jpg';
 import vinyl from '../images/vinyl.jpg';
 import jeopardy from '../images/jeopardy.jpg';
-import gif from '../images/gif.jpg';
+import isabella from '../images/isabella.jpg';
 // import carousel from '../images/carousel.jpg';
 
 class body extends Component {
@@ -43,9 +43,10 @@ class body extends Component {
         <div className='inner-body'>
           <div className="work">
             <Browser name='lindsaywatson.co' url='lindsaywatson.co' image={lindsay}/>
-            <Browser name='Vinyl Game' url='christopher-watson.github.io/vinyl' image={vinyl}/>
-            <Browser name='Trivia Game' url='christopher-watson.github.io/trivia' image={jeopardy}/>
-            <Browser name='GIF Generator' url='christopher-watson.github.io/gif-bot' image={gif}/>
+            <Browser name='isabellafitness.com' url='isabellafitness.com' image={isabella}/>
+            <Browser name='Vinyl Game' url='christopherwatson.co/vinyl' image={vinyl}/>
+            <Browser name='Trivia Game' url='christopherwatson.co/trivia' image={jeopardy}/>
+
             {/* <Browser name='Image Carousel' url='christopherwatson.co/gif-bot' image={carousel}/> */}
           </div>
           <div className="skills">
