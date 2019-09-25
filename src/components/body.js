@@ -44,8 +44,8 @@ class body extends Component {
           <div className="work">
             <Browser name='lindsaywatson.co' url='lindsaywatson.co' image={lindsay}/>
             <Browser name='isabellafitness.com' url='isabellafitness.com' image={isabella}/>
-            <Browser name='Vinyl Game' url='christopherwatson.co/vinyl' image={vinyl}/>
-            <Browser name='Trivia Game' url='christopherwatson.co/trivia' image={jeopardy}/>
+            <Browser name='Vinyl Game' url='christopher-watson.github.io/vinyl' image={vinyl}/>
+            <Browser name='Trivia Game' url='christopher-watson.github.io/trivia' image={jeopardy}/>
             {/* <Browser name='Image Carousel' url='christopherwatson.co/gif-bot' image={carousel}/> */}
           </div>
           <div className="skills">
